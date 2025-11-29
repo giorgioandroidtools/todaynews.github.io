@@ -1,0 +1,75 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  background: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+header h1 { font-size: 2.8rem; margin-bottom: 0.5rem; }
+#data-oggi { font-size: 1.4rem; opacity: 0.9; }
+.aggiornamento { font-size: 1rem; margin-top: 0.5rem; }
+
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.card:hover { transform: translateY(-5px); }
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 1rem;
+}
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #0d47a1;
+}
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+.source {
+  font-size: 0.85rem;
+  color: #888;
+  text-align: right;
+}
+a { color: inherit; text-decoration: none; }
+
+.loader {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 3rem;
+  color: #0d47a1;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #333;
+  color: #ccc;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
